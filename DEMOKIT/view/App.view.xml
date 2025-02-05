@@ -1,0 +1,36 @@
+<!--    1. View names are capitalized
+        2. All views are stored in the view folder
+        3. Names of XML views always end with *.view.xml
+        4. The default XML namespace is sap.m
+        5. Other XML namespaces use the last part of the SAP namespace as alias (for example, mvc for sap.ui.core.mvc) -->
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="ui5.walkthrough.controller.App"
+    displayBlock="true"
+>
+
+    <Shell>
+        <App
+            class="myAppDemo"
+            id="app"/>
+    </Shell>
+
+    <!-- <Text text="Hello World" /> Commented, implementing button logic for controller
+    <Shell>
+        <App class="myAppDemo">
+            <pages>
+                <Page title="{i18n>homePageTitle}">
+                    <content>
+                        <mvc:XMLView
+                            viewName="ui5.walkthrough.view.ButtonInputPanel"
+                        />
+                        <mvc:XMLView
+                            viewName="ui5.walkthrough.view.InvoiceList"
+                        />
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell> -->
+</mvc:View>

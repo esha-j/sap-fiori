@@ -1,0 +1,39 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="ui5.walkthrough.controller.ButtonInputPanel"
+    displayBlock="true"
+>
+    <!-- <Text text="Hello World" /> Commented, implementing button logic for controller -->
+
+    <!-- Adding margin -->
+    <Panel
+        headerText="{i18n>helloPanelTitle}"
+        class="sapUiResponsiveMargin"
+        width="auto"
+    >
+        <content>
+            <Button
+                id="dialogButtonClick"
+                icon="sap-icon://da"
+                text="{i18n>openDialogButtonText}"
+                press=".onOpenDialog"
+                class="myCustomButton"
+            />
+            <Button
+                text="{i18n>onButtonClickText}"
+                press=".onButtonClick"
+                class="myCustomButton"
+            />
+            <Input
+                value="{/recipient/name}"
+                valueLiveUpdate="true"
+                width="60%"
+            />
+            <FormattedText
+                htmlText="Hello {/recipient/name}"
+                class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+            />
+        </content>
+    </Panel>
+</mvc:View>
